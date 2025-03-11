@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background: linear-gradient(45deg, #7e7eff, rgb(185, 185, 255));
+}
+
+.container {
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+}
+
+.timer-section {
+    margin-right: 100px;
+    padding: 20px;
+}
+
+.stopwatch-section {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+.timer-box, .stopwatch-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-bottom: 20px;
+}
+
+.timer-input input {
+    width: 40px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+}
+
+.timer-controls button, .stopwatch-controls button {
+    padding: 8px 16px;
+    margin: 4px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #202124;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.timer-controls button:hover, .stopwatch-controls button:hover {
+    border-color: #d2d2d2;
+}
+
+#timerDisplay, #stopwatchDisplay {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.clock-container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clock {
+    margin-bottom: 20px;
+}
+
+#time {
+    font-size: 3em;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+#date {
+    font-size: 1.1em;
+    color: #5f6368;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls > div {
+    margin: 10px 0;
+}
+
+button, select {
+    padding: 8px 16px;
+    margin: 4px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #202124;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover, select:hover {
+    border-color: #d2d2d2;
+}
+
+button.active {
+    background-color: #1a73e8;
+    color: #fff;
+    border-color: #1a73e8;
+}
+
+select {
+    padding: 7px 14px;
+}
+
+/* Dark Theme */
+.clock-container.dark, .timer-box.dark, .stopwatch-box.dark{
+    background-color: #202124;
+    color: #e8eaed;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.clock-container.dark button,
+.clock-container.dark select,
+.timer-box.dark button,
+.stopwatch-box.dark button{
+    background-color: #3c4043;
+    border-color: #3c4043;
+    color: #e8eaed;
+}
+
+.clock-container.dark button:hover,
+.clock-container.dark select:hover,
+.timer-box.dark button:hover,
+.stopwatch-box.dark button:hover{
+    border-color: #5f6368;
+}
+
+.clock-container.dark button.active, .timer-box.dark button.active, .stopwatch-box.dark button.active{
+    background-color: #8ab4f8;
+    color: #202124;
+    border-color: #8ab4f8;
+}
+
+.clock-container.dark #date{
+    color: #9aa0a6;
+}

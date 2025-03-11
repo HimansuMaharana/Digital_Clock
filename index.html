@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer-section">
+            <div class="timer-box">
+                <h2>Timer</h2>
+                <div class="timer-input">
+                    <input type="number" id="timerHours" placeholder="HH" min="0">
+                    <input type="number" id="timerMinutes" placeholder="MM" min="0">
+                    <input type="number" id="timerSeconds" placeholder="SS" min="0">
+                </div>
+                <div class="timer-controls">
+                    <button id="startTimer">Start</button>
+                    <button id="pauseTimer">Pause</button>
+                    <button id="resetTimer">Reset</button>
+                </div>
+                <div id="timerDisplay">00:00:00</div>
+            </div>
+        </div>
+        <div class="clock-container">
+            <div class="clock">
+                <div id="time"></div>
+                <div id="date"></div>
+            </div>
+            <div class="controls">
+                <div class="format-toggle">
+                    <button id="12hr">12-Hour</button>
+                    <button id="24hr">24-Hour</button>
+                </div>
+                <div class="theme-toggle">
+                    <button id="light">Light</button>
+                    <button id="dark">Dark</button>
+                </div>
+                <div class="timezone-select">
+                    <select id="timezone">
+                        <option value="UTC">UTC</option>
+                        <option value="America/New_York">New York</option>
+                        <option value="Europe/London">London</option>
+                        <option value="Asia/Tokyo">Tokyo</option>
+                        <option value="Asia/Kolkata">Kolkata</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="stopwatch-section">
+            <div class="stopwatch-box">
+                <h2>Stopwatch</h2>
+                <div id="stopwatchDisplay">00:00:00.00</div>
+                <div class="stopwatch-controls">
+                    <button id="startStopwatch">Start</button>
+                    <button id="pauseStopwatch">Pause</button>
+                    <button id="resetStopwatch">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
