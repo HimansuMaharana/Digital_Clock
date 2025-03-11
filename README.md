@@ -27,8 +27,3 @@ An interactive **digital clock** with a **built-in timer and stopwatch**. Built 
 - **HTML** – Structure of the web page.
 - **CSS** – Styling and theme customization.
 - **JavaScript** – Functionality for clock, timer, and stopwatch.
-
-## 📂 Setup & Installation
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/digital-clock.git
