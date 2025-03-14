@@ -1,4 +1,4 @@
-# 🕒 Digital Clock with Timer & Stopwatch
+# Digital Clock with Timer & Stopwatch
 
 An interactive **digital clock** with a **built-in timer and stopwatch**. Built using **HTML, CSS, and JavaScript**, this project provides a clean and modern interface with theme customization, a 12-hour/24-hour format toggle, and timezone selection.
 
